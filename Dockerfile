@@ -4,7 +4,7 @@ FROM buildpack-deps:jessie
 ENV PYTHON_PIP_VERSION 7.0.3
 
 RUN apt-get update && apt-get install -y libgeos-dev libgdal-dev \
-    python-gdal python-dev
+    python-gdal python-dev netcat
 
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python2
 RUN pip install --upgrade pip==$PYTHON_PIP_VERSION
