@@ -1,7 +1,7 @@
 FROM buildpack-deps:jessie
 
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
-ENV PYTHON_PIP_VERSION 7.0.3
+ENV PYTHON_PIP_VERSION 9.0.1
 
 RUN apt-get update && apt-get install -y libgeos-dev libgdal-dev \
     python-gdal python-dev netcat
